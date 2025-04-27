@@ -1,11 +1,14 @@
 import React from "react";
 
-const CategoryButton = ({ category_name }) => {
+const CategoryButton = ({ category_name, current }) => {
+  console.log(category_name, current);
   return (
-    <button className="text-nowrap border border-gray-400 text-black rounded py-2 px-4 mr-2 mt-2 hover:bg-gray-200 transition duration-300 ease-in-out">
+    <button
+      className={` ${current && "bg-black text-white"}       
+         border border-gray text-nowrap py-2 px-4 mr-2 mt-2 hover:bg-gray-200`}
+    >
       {category_name}
     </button>
   );
 };
-
 export default CategoryButton;

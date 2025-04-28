@@ -4,12 +4,10 @@ import CategoryButton from "./CategoryButton";
 const CategorySection = () => {
   const title = "Product Categories";
   const categories = [
-    "Electronics",
-    "Books",
-    "Clothing",
-    "Toys",
-    "Sports",
-    "Shoes",
+    "electronics",
+    "jewelery",
+    "men's clothing",
+    "women's clothing",
   ];
 
   return (
